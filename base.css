@@ -1,0 +1,63 @@
+.title-initview {
+  text-align: center;
+  margin-top: 15px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1.0) 1%, rgba(192, 8, 24, 1.0) 20%,rgba(192, 8, 24, 1.0) 80%, rgba(255, 255, 255, 1.0) 99%);
+
+  color: white;
+}
+.start-tournament {
+  align-content: center;
+  width: 30%;
+  height: 75px;
+  background-color: rgba(192, 8, 24, 1.0);
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+.start-tournament:hover {
+  background-color: white;
+  color: rgba(192, 8, 24, 1.0);
+  width: 50%;
+  height: 150px;
+  font-size: 48px;
+}
+
+.main {
+  display: flex;              /* establish flex container */
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: center;        /* center items horizontally, in this case */
+  height: 500px;
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0; /* Fully transparent */
+  pointer-events: none; /* Prevents clicking on the button once it's faded out */
+}
+
+#initView {
+  transition: opacity 1s ease-in; /* Smooth transition for the opacity change */
+}
+
+.player-name-input {
+  width: 150px;
+  height: auto;
+}
+
+#confirm {
+  background-color: rgba(192, 8, 24, 1.0);
+  color: white;
+}
+
+.player-name-input:focus {
+  border-color: rgba(192, 8, 24, 1.0); /* Change to your desired border color */
+  box-shadow: 0 0 0 0.05rem rgba(192, 8, 24, 1.0); /* Adjust the rgba values to match or complement the border color */
+}
+
+p {
+  font-weight: bold;
+  font-size: 20px;
+}
