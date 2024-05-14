@@ -47,34 +47,39 @@
             <div class="card-body justify-content-center">
               <h5 class="card-title">Timer</h5>
               <select name="playerSelect" id="playerSelect"></select>
+              <div class="stopwatch">
+                <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+              </div>
+              <button id="startStopButton">Start</button>
+              <button id="resetButton">Reset</button>
             </div>
           </div>
         </div>
         <div class="col-8">
           <div class="row">
             <div class="col-3">
-              <div class="card">
+              <div class="card stagecard">
                 <div class="card-body justify-content-center">
                   <h5 class="card-title">Stage 1</h5>
                 </div>
               </div>
             </div>
             <div class="col-3">
-              <div class="card">
+              <div class="card stagecard">
                 <div class="card-body justify-content-center">
                   <h5 class="card-title">Stage 2</h5>
                 </div>
               </div>
             </div>
             <div class="col-3">
-              <div class="card">
+              <div class="card stagecard">
                 <div class="card-body justify-content-center">
                   <h5 class="card-title">Stage 3</h5>
                 </div>
               </div>
             </div>
             <div class="col-3">
-              <div class="card">
+              <div class="card stagecard">
                 <div class="card-body justify-content-center">
                   <h5 class="card-title">Stage 4</h5>
                 </div>
@@ -83,7 +88,7 @@
           </div>
           <div class="row justify-content-center">
             <div class="col-8">
-              <div class="card">
+              <div class="card stagecard">
                 <div class="card-body justify-content-center">
                   <h5 class="card-title">Final</h5>
                 </div>
@@ -95,6 +100,6 @@
     </div>
   <script src="initViewHandler.js"></script>
   <script src="playerHandler.js"></script>
-  <script src="playerRetriever.js"></script>
+  <script src="timerFunctionality.js"></script>
 </body>
 </html>

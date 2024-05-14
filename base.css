@@ -66,9 +66,17 @@ p {
   width: 20rem;
 }
 
+.stagecard {
+  min-height: 400px;
+}
+
 .card {
   padding: 10px;
   margin: 5px;
+}
+
+.card-title {
+  text-align: center;
 }
 
 .player-confirm-btn {
