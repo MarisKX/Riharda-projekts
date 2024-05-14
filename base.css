@@ -62,8 +62,13 @@ p {
   font-size: 20px;
 }
 
-.card {
+.playercard {
   width: 20rem;
+}
+
+.card {
+  padding: 10px;
+  margin: 5px;
 }
 
 .player-confirm-btn {
@@ -85,4 +90,9 @@ p {
   transform: translateX(-50%);
   transition: opacity 1s ease-in-out;
   opacity: 0; /* Start with the notification invisible */
+}
+
+#gameArea {
+  margin-left: 50px;
+  margin-right: 50px;
 }

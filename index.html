@@ -29,7 +29,7 @@
         id="player"
         placeholder="Name">
       <button class="btn btn-light" id="confirm">Confirm</button>
-      <div class="card mt-5">
+      <div class="card mt-5 playercard">
         <div class="card-body">
           <h5 class="card-title">Players:</h5>
           <div id="playerList"> <!-- Container for player names -->
@@ -41,9 +41,60 @@
 
     <!--  Game and Score Area  -->
     <div class="main" id="gameArea" style="display: none;">
-      Start!
+      <div class="row mt-5">
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body justify-content-center">
+              <h5 class="card-title">Timer</h5>
+              <select name="playerSelect" id="playerSelect"></select>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="row">
+            <div class="col-3">
+              <div class="card">
+                <div class="card-body justify-content-center">
+                  <h5 class="card-title">Stage 1</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="card-body justify-content-center">
+                  <h5 class="card-title">Stage 2</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="card-body justify-content-center">
+                  <h5 class="card-title">Stage 3</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="card-body justify-content-center">
+                  <h5 class="card-title">Stage 4</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <div class="card">
+                <div class="card-body justify-content-center">
+                  <h5 class="card-title">Final</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   <script src="initViewHandler.js"></script>
   <script src="playerHandler.js"></script>
+  <script src="playerRetriever.js"></script>
 </body>
 </html>

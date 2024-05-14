@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!this.disabled) { // Check if the button is not disabled
       gameArea.style.display = 'block';  // Show the game area
       playerEntryContent.style.display = 'none'; // Hide the player entry area
+      populatePlayerSelect(); // Call the function to populate the select element
     }
   });
 
@@ -63,5 +64,29 @@ document.addEventListener('DOMContentLoaded', function() {
         notification.style.display = 'none';
       }, 1000); // Wait for the opacity transition to finish before hiding
     }, 3000); // Duration the notification is visible
+  }
+
+  function populatePlayerSelect() {
+    const selectElement = document.getElementById('playerSelect'); // Ensure your select has this ID
+    const players = JSON.parse(localStorage.getItem('players')) || [];
+
+    // Clear existing options
+    selectElement.innerHTML = '';
+
+    // Check if there are any players stored in localStorage
+    if (players.length > 0) {
+      // Create a new option element for each player and append it to the select element
+      players.forEach(function(player) {
+        const option = document.createElement('option');
+        option.value = player; // Set the value attribute (useful for form submissions)
+        option.textContent = player; // Set the display text
+        selectElement.appendChild(option);
+      });
+    } else {
+      // Optionally handle the case where no players are stored
+      const option = document.createElement('option');
+      option.textContent = 'No players available';
+      selectElement.appendChild(option);
+    }
   }
 });
