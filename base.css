@@ -104,3 +104,23 @@ p {
   margin-left: 50px;
   margin-right: 50px;
 }
+
+.stagecard-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.stagecard-name, .stagecard-time, .stagecard-points {
+  flex: 1; /* Allows each section to take up equal space if desired */
+  text-align: left; /* Aligns text to the left */
+}
+
+.stagecard-time {
+  text-align: center; /* Centers the time */
+}
+
+.stagecard-points {
+  text-align: right; /* Aligns the points to the right */
+}
