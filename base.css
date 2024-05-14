@@ -29,8 +29,8 @@
   flex-direction: column;     /* stack flex items vertically */
   justify-content: center;    /* center items vertically, in this case */
   align-items: center;        /* center items horizontally, in this case */
-  height: 500px;
   opacity: 1;
+  margin-top: 100px;
 }
 
 .hidden {
@@ -60,4 +60,29 @@
 p {
   font-weight: bold;
   font-size: 20px;
+}
+
+.card {
+  width: 20rem;
+}
+
+.player-confirm-btn {
+  margin: auto 0;
+  background-color: rgba(192, 8, 24, 1.0);
+  color: white;
+  text-align: center;
+}
+
+#notification {
+  position: fixed;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  z-index: 1000;
+  padding: 10px;
+  left: 75%;
+  top: 75px;
+  transform: translateX(-50%);
+  transition: opacity 1s ease-in-out;
+  opacity: 0; /* Start with the notification invisible */
 }

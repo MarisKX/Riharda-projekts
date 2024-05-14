@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Wait for the fade-out to complete before changing content display
     setTimeout(function() {
         initView.style.display = 'none'; // Hide the initView completely
-        document.getElementById('contentToReveal').style.display = 'flex'; // Show the other content
+        document.getElementById('playerEntryContent').style.display = 'flex'; // Show the other content
     }, 1200); // This should match the duration of the CSS transition
   });
 });

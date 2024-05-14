@@ -10,13 +10,17 @@
 </head>
 <body>
   <h1 class="title-initview">Tournament</h1>
+
+    <!--  Initial screen-->
     <div class="main" id="initView">
       <div class="container btn start-tournament">
         Start Tournament
       </div>
     </div>
-    <div class="main" id="contentToReveal" style="display: none;">
-      <!-- Additional content here -->
+
+    <!--  Player Entry Screen  -->
+    <div class="main" id="playerEntryContent" style="display: none;">
+      <div id="notification" style="display: none;">Player added.</div>
       <p>Enter the player name:</p>
       <input
         class="player-name-input form-control-lg form-control mb-3"
@@ -25,6 +29,19 @@
         id="player"
         placeholder="Name">
       <button class="btn btn-light" id="confirm">Confirm</button>
+      <div class="card mt-5">
+        <div class="card-body">
+          <h5 class="card-title">Players:</h5>
+          <div id="playerList"> <!-- Container for player names -->
+          </div>
+          <button class="mt-4 btn player-confirm-btn" id="startButton" disabled>Start</button>
+        </div>
+      </div>
+    </div>
+
+    <!--  Game and Score Area  -->
+    <div class="main" id="gameArea" style="display: none;">
+      Start!
     </div>
   <script src="initViewHandler.js"></script>
   <script src="playerHandler.js"></script>
