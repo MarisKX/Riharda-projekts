@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (players.length < 8) {
       if (playerNameInput.value.trim() === '') {
-        showNotification('Please enter a name.', true);
+        showN
+        otification('Please enter a name.', true);
         return; // Stop the function if no name is entered
       }
 
