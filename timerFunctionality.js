@@ -13,6 +13,14 @@ document.addEventListener("DOMContentLoaded", function() {
   let minutes = 0;
   let playerTimes = []; // This will store objects of player names and their times
 
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 's') {  // 's' to start/stop the timer
+        startStopButton.click();  // Simulate button click
+    } else if (event.key === 'r') {  // 'r' to reset the timer
+        resetButton.click();  // Simulate button click
+    }
+  });
+
   startStopButton.addEventListener("click", function() {
     if (isRunning) {
       clearInterval(timer);
